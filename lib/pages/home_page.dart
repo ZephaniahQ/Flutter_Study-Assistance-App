@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:time_table/widgets/Time_table.dart';
 import 'package:time_table/widgets/BottomNav.dart';
 
-class SubjectList extends StatefulWidget {
-  const SubjectList({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<SubjectList> createState() => _SubjectListState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _SubjectListState extends State<SubjectList> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
