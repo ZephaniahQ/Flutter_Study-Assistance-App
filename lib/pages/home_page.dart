@@ -44,13 +44,31 @@ class _SubjectListState extends State<SubjectList> {
     return Scaffold(
       backgroundColor: Colors.blueAccent,
       appBar: AppBar(
-        title: const Text('Time Table'),
+        title: const Text('Study Assistance App'),
         centerTitle: true,
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
       ),
       body: Column(
         children: [
+          Row(children: [
+            Expanded(
+              child: Container(
+                alignment: Alignment.center,
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                    color: Colors.black,
+                    shape: BoxShape.rectangle,
+                    border: BorderDirectional(
+                        top: BorderSide(color: Colors.white),
+                        bottom: BorderSide.none)),
+                child: const Text(
+                  "Time Table",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
+          ]),
           Container(
             padding: const EdgeInsets.all(10.0),
             decoration: BoxDecoration(
@@ -159,7 +177,7 @@ class _SubjectListState extends State<SubjectList> {
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );
