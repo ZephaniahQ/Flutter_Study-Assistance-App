@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:time_table/widgets/Time_table.dart';
-import 'package:time_table/widgets/BottomNav.dart';
+import 'package:time_table/widgets/Bottom_nav.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
       body: const Column(
         children: [
           TimeTable(),
-          //BottomNav(),
+          BottomNav(),
         ],
       ),
     );
