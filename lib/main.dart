@@ -1,3 +1,4 @@
+import 'package:time_table/pages/Assignments_page.dart';
 import 'package:time_table/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: HomePage());
+    return MaterialApp(
+      initialRoute: '/home',
+      routes: {
+        '/home': (context) => const HomePage(),
+        '/assignments': (context) => const AssignmentsPage(),
+      },
+    );
   }
 }

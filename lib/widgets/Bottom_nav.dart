@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:time_table/pages/Assignments_page.dart';
 
 class BottomNav extends StatelessWidget {
   const BottomNav({super.key});
@@ -18,7 +19,9 @@ class BottomNav extends StatelessWidget {
                       border: Border.all(color: Colors.black),
                     ),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/assignments');
+                      },
                       child: const Column(
                         //mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
