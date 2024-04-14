@@ -36,6 +36,12 @@ final List<Day> days = [
     ..addSubject(
         Subject(subject: "Programing Fundamentals Lab", timing: "10-11:30am"))
     ..addSubject(Subject(subject: "Math Defficiency", timing: "11-11:45")),
+  Day(
+    dayName: "Saturday",
+  ),
+  Day(
+    dayName: "Sunday",
+  ),
 ];
 
 List<Day> getDays() {

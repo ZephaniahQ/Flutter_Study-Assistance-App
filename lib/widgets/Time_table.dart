@@ -15,7 +15,7 @@ class _TimeTableState extends State<TimeTable> {
   int todayIndex = DateTime.now().weekday - 1; // Today's day index
 
   void dayForward() {
-    if (todayIndex == 4) {
+    if (todayIndex == 6) {
       setState(() {
         todayIndex = 0;
       });
@@ -29,7 +29,7 @@ class _TimeTableState extends State<TimeTable> {
   void dayBackward() {
     if (todayIndex == 0) {
       setState(() {
-        todayIndex = 4;
+        todayIndex = 6;
       });
     } else {
       setState(() {
